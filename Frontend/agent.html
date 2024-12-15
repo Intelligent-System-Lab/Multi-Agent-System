@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADRD Care Assistant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-header">
+            <div class="header-left">
+                <h1>ADRD Care Assistant</h1>
+                <div class="agent-info">
+                    <i class="fas fa-robot"></i>
+                    <span id="current-agent">Medical Advisor</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-container">
+            <div class="chat-messages" id="chat-messages">
+                <div class="typing-indicator" id="typing-indicator">
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                </div>
+            </div>
+
+            <div class="error-message" id="error-message">
+                An error occurred. Please try again.
+            </div>
+            
+            <div class="chat-input">
+                <div class="input-container">
+                    <textarea 
+                        id="user-input" 
+                        placeholder="Type your message here..."
+                        rows="1"
+                    ></textarea>
+                    <button id="send-button">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
